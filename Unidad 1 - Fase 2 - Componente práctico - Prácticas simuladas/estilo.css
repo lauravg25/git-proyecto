@@ -11,11 +11,17 @@
 html{
     scroll-behavior: smooth;
 }
+
 .inicio {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("img/fondo.jpg");
     background-size: cover;
     background-position: center center;
     color: #fff;
+}
+i.fa-brands.fa-linkedin {
+    filter: hue-rotate(306deg);
+    zoom: 1.4;
+    padding-top: 7px;
 }
 .inicio .contenido-seccion{
 
@@ -26,6 +32,9 @@ html{
 }
 .inicio .contenido-seccion header{
     padding: 30px;
+}
+label.hamburger {
+    cursor: pointer;
 }
 
 .inicio .contenido-seccion header nav{
@@ -65,6 +74,7 @@ html{
     line-height: 50px;
     cursor: pointer;
     transition: .3s;
+    z-index: 10;
 }
 .inicio .contenido-seccion header .nav-bar:hover{
     box-shadow: 0 0 35px #fff;
@@ -88,7 +98,7 @@ html{
 .inicio .contenido-seccion .info .redes{
     display: inline-block;
     text-decoration: none;
-    background-color: #000;
+    background-color: white;
     color: #2f8590;
     border: 1px solid #2f8590;
     border-radius: 50%;
@@ -97,11 +107,11 @@ html{
     line-height: 40px;
     margin: 0 5px;
     transition: .3s;
+    cursor: pointer;
 }
-.inicio .contenido-seccion .info .redes a:hover{
-    color: #fff;
-    background-color: #2f8590;
-    box-shadow: 0 0 20px #fff;
+.inicio .contenido-seccion .info .redes:hover {
+    border-color: #5e7099;
+    box-shadow: 0px 0px 8px 0px white;
 }
 .inicio .contenido-seccion .foto{
     position: relative;
@@ -118,7 +128,7 @@ html{
 }
 .titulo-seccion{
     font-family: "Yellowtail";
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 input[type="checkbox"] {
     display: none;
@@ -131,6 +141,7 @@ input[type="checkbox"]:checked + .nav {
     background-color: #e6e6e6;
     padding: 140px 0 100px 0;
     text-align: center;
+    color: #3c3a3a;
 }
 .sobremi .contenido-seccion{
     max-width: 1000px;
@@ -155,9 +166,15 @@ input[type="checkbox"]:checked + .nav {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    @media (max-width: 1250px) {
+        display: block;
+      }
 }
 .sobremi .contenido-seccion .fila .col{
     width: 30%;
+    @media (max-width: 1250px) {
+        width: 100%;
+      }
 }
 .sobremi .contenido-seccion .fila .col i{
     color: #2f8590;
@@ -167,7 +184,9 @@ input[type="checkbox"]:checked + .nav {
     border: 2px solid #2f8590;
     line-height: 40px;
     border-radius: 50%;
+   
 }
+
 .sobremi .contenido-seccion .fila .col span{
     display: block;
     font-weight: bold;
@@ -176,7 +195,7 @@ input[type="checkbox"]:checked + .nav {
 .habilidades{
     padding: 80px 0 100px 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("img/habi.jpg");
+    background: linear-gradient(90deg, rgb(11 73 155 / 95%) 0%, rgb(25 103 210 / 71%) 32%, rgba(0, 212, 255, 0.4416141456582633) 100%);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -193,21 +212,30 @@ input[type="checkbox"]:checked + .nav {
 }
 .habilidades .contenido-seccion .fila{
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: center;
+    column-gap: 35px;
+    padding-top: 45px;
+    @media (max-width: 1250px) {
+        display: block;
+      }
 }
 .habilidades .contenido-seccion .fila .col{
     width: 47%;
     text-align: left;
+    @media (max-width: 1250px) {
+        width: 100%;
+      }
 }
 .habilidades .contenido-seccion .fila .col .cont-barra{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .resumen{
     background-color: #e6e6e6;
     padding: 140px 0 100px 0;
     text-align: center;
+    color: #3c3a3a;
 }
 .resumen .contenido-seccion{
     max-width: 1000px;
@@ -276,6 +304,9 @@ input[type="checkbox"]:checked + .nav {
 .contacto .contenido-seccion .fila{
     display: flex;
     justify-content: space-around;
+    @media (max-width: 1250px) {
+        display: block;
+      }
 }
 .contacto .contenido-seccion .fila .col{
     margin-top: 50px;
@@ -283,3 +314,161 @@ input[type="checkbox"]:checked + .nav {
 .contacto .contenido-seccion .fila .col h2{
     color: #2f8590;
 }
+.video {
+    width: 100%;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+.box {
+    position: relative;
+    width: 240px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+    margin-bottom: 28px;
+  }
+  
+
+  
+  
+  .box .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+  
+ 
+  .title-ability p {
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    color: #555555;
+    text-transform: capitalize;
+}
+  
+  
+  
+  .box .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box .content .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .box .content .percent::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 20px;
+    background: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .box .content .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+  }
+  
+  .box .content .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: rgba(0,0,0,0.05);
+    transform: translate(5px, 5px);
+  }
+  
+  .box .content .percent svg circle:nth-child(2) {
+    stroke: #555;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .box .content .percent .dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 1s linear forwards;
+    
+  }
+  
+  @keyframes animateDot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(calc(3.6deg * var(--num)));
+    }
+  }
+  
+  .box .content .percent .dot::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: #555;
+    border-radius: 50%;
+  }
+  
+  .box .content .number {
+    position: relative;
+    inset: 0;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+  }
+  
+  .box .content .number h2 {
+    font-size: 2.5rem;
+    color: #555;
+  }
+  
+  .box .content .number h2 span {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
