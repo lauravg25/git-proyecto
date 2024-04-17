@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./estilo.css">
+
     <title>Hoja de vida Laura Garcia</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
             <header>
-                <div class="nav-bar">
-                    <input type="checkbox" id="toggle">
+                <div class="nav-bar" id="nav-menu">
+                  
                     <label for="toggle" class="hamburger"><i class="fas fa-bars"></i></label>
                 </div>
                 <nav id="nav" class="nav">
@@ -72,60 +73,115 @@
             <h2 class="titulo-seccion">Habilidades</h2>
             <div class="fila">
                 <div class="col">
-                    <span>Pruebas funcionales</span>
+                    
                     <div class="cont-barra">
                         <div class="barra" id="pf">
                             <div class="e">
-                                <img src="img/carga.png" alt="">
-                           
-                            </div>
-                            <span>98%</span>
+                               <!--- <img src="img/carga.png" alt="">-->
+                               <div class="box">
+                                <div class="shadow"></div>
+                                <div class="content">
+                                    <div class="title-ability">
+                                        <p>Pruebas funcionales</p>
+                                      </div>
+                                  <div class="percent" data-text="95%" style="--num: 95">
+                                    <div class="dot"></div>
+                                    <svg>
+                                      <circle cx="70" cy="70" r="70"></circle>
+                                      <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              </div>
+                        
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <span>Pruebas de estres</span>
+                    
                     <div class="cont-barra">
                         <div class="barra" id="pde">
                             <div class="e">
-                                <img src="img/carga.png" alt="">
-                           
+                                 <!--- <img src="img/carga.png" alt="">-->
+                                 <div class="box">
+                                    <div class="shadow"></div>
+                                    <div class="content">
+                                        <div class="title-ability">
+                                            <p>Pruebas de estres</p>
+                                          </div>
+                                      <div class="percent" data-text="79%" style="--num: 79">
+                                        <div class="dot"></div>
+                                        <svg>
+                                          <circle cx="70" cy="70" r="70"></circle>
+                                          <circle cx="70" cy="70" r="70"></circle>
+                                        </svg>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                             </div>
-                            <span>78%</span>
+                            
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="fila">
                 <div class="col">
-                    <span>Pruebas de API´s</span>
+                    
                     <div class="cont-barra">
                         <div class="barra" id="apis">
-                            <div class="e">
-                                <img src="img/carga.png" alt="">
-                           
+                            <div class="e circle">
+                                   <!--- <img src="img/carga.png" alt="">-->
+                                   <div class="box">
+                                    <div class="shadow"></div>
+                                    <div class="content">
+                                        <div class="title-ability">
+                                            <p>Pruebas de API´s</p>
+                                          </div>
+                                      <div class="percent" data-text="98%" style="--num: 98">
+                                        <div class="dot"></div>
+                                        <svg>
+                                          <circle cx="70" cy="70" r="70"></circle>
+                                          <circle cx="70" cy="70" r="70"></circle>
+                                        </svg>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                             </div>
-                            <span>98%</span>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <span>Pruebas automatizadas</span>
+                   
                     <div class="cont-barra">
                         <div class="barra" id="pa">
                             <div class="e">
-                                <img src="img/carga.png" alt="">
-                           
+                                    <!--- <img src="img/carga.png" alt="">-->
+                                    <div class="box">
+                                        <div class="shadow"></div>
+                                        <div class="content">
+                                            <div class="title-ability">
+                                                <p>Pruebas automatizadas</p>
+                                              </div>
+                                          <div class="percent" data-text="75%" style="--num: 75">
+                                            <div class="dot"></div>
+                                            <svg>
+                                              <circle cx="70" cy="70" r="70"></circle>
+                                              <circle cx="70" cy="70" r="70"></circle>
+                                            </svg>
+                                          </div>
+                                         </div>
+                                      </div>
                             </div>
-                            <span>78%</span>
+                           
                         </div>
                     </div>
                 </div>
                 
             </div>
-            
-
+           
         </div>
 
     </section>
@@ -184,7 +240,7 @@
                 </div>
             </div>
         </div>
-        <div><iframe width="560" height="315" src="https://youtu.be/1U3jhs1S6IQ" frameborder="0" allowfullscreen></iframe></div>
+        <div class="video"><iframe width="560" height="315" src="https://youtu.be/1U3jhs1S6IQ" frameborder="0" allowfullscreen></iframe></div>
     </section>
     <footer class="contacto" id="contacto">
         <div class="contenido-seccion">
@@ -221,6 +277,6 @@
 
     </footer>
    </main>
-    
+   <script src="app.js"></script>
 </body>
 </html>
