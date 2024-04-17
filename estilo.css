@@ -13,10 +13,13 @@ html{
 }
 
 .inicio {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("img/fondo.jpg");
+    /*background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("img/fondo.jpg");*/
     background-size: cover;
     background-position: center center;
     color: #fff;
+    background: rgb(4, 0, 36);
+    background: rgb(53 195 247);
+    background: radial-gradient(circle, rgb(124 204 243) 0%, rgb(13 70 145) 100%);
 }
 i.fa-brands.fa-linkedin {
     filter: hue-rotate(306deg);
@@ -40,7 +43,7 @@ label.hamburger {
 .inicio .contenido-seccion header nav{
     position: fixed;
     margin-left: 60px;
-    background-color: #3c7e94;
+    background-color: #4eb5e9;
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -61,12 +64,12 @@ label.hamburger {
     text-shadow: 0 0 35px #fff;
 }
 .inicio .contenido-seccion header .logo .color{
-    color: #3c7e94;
+    color: #8ce9fe;
     font-family: "yellowtail"
 }
 .inicio .contenido-seccion header .nav-bar{
     position: fixed;
-    background-color: #2f8590;
+    background-color: #7bcbf3;
     font-size: 20px;
     width: 50px;
     height: 50px;
@@ -74,7 +77,7 @@ label.hamburger {
     line-height: 50px;
     cursor: pointer;
     transition: .3s;
-    z-index: 10;
+    z-index: 11;
 }
 .inicio .contenido-seccion header .nav-bar:hover{
     box-shadow: 0 0 35px #fff;
@@ -100,7 +103,7 @@ label.hamburger {
     text-decoration: none;
     background-color: white;
     color: #2f8590;
-    border: 1px solid #2f8590;
+    border: 1px solid #8ce9fec2;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -110,7 +113,7 @@ label.hamburger {
     cursor: pointer;
 }
 .inicio .contenido-seccion .info .redes:hover {
-    border-color: #5e7099;
+    border-color: #18adcf;
     box-shadow: 0px 0px 8px 0px white;
 }
 .inicio .contenido-seccion .foto{
@@ -120,7 +123,7 @@ label.hamburger {
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #2f8590;
+    border: 7px solid #8ce9fe70;
     position: absolute;
     left: 50%;
     top: -100px;
@@ -153,7 +156,7 @@ input[type="checkbox"]:checked + .nav {
     font-size: 30px;
 }
 .sobremi .contenido-seccion .especial{
-    color: #2f8590;
+    
     font-weight: bold;
     margin-top: 15px;
 }
@@ -177,11 +180,11 @@ input[type="checkbox"]:checked + .nav {
       }
 }
 .sobremi .contenido-seccion .fila .col i{
-    color: #2f8590;
+    color: #34a1d7;
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 2px solid #2f8590;
+    border: 2px solid #7bcbf3;
     line-height: 40px;
     border-radius: 50%;
    
@@ -251,24 +254,32 @@ input[type="checkbox"]:checked + .nav {
     display: flex ;
     justify-content: space-between;
     margin-top: 30px;
+    @media (max-width: 1250px) {
+        display: block ;
+      }
 }
 .resumen .contenido-seccion .info .col{
     width: 45%;
+    @media (max-width: 1250px) {
+        width: 100%;
+      }
 
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
-    color: #2f8590;
+    color: #114b99;
     font-weight: bold;
-    border: 2px solid #2f8590;
+    border: 2px solid #7bcbf3;
     padding: 10px;
 }
 .resumen .contenido-seccion .info .col table{
     margin-top: 30px;
     border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 3rem;
 }
 .resumen .contenido-seccion .info .col table .datos{
-    width: 40%;
+    width: 50%;
     border-bottom: 1px solid #bab9b9;
 }
 .resumen .contenido-seccion .info .col table h4{
@@ -312,9 +323,13 @@ input[type="checkbox"]:checked + .nav {
     margin-top: 50px;
 }
 .contacto .contenido-seccion .fila .col h2{
-    color: #2f8590;
+    color: #7bcbf3;
 }
 .video {
+    width: 100%;
+}
+
+iframe {
     width: 100%;
 }
 
